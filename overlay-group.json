@@ -1,0 +1,70 @@
+{
+  "type": "custom.overlay",
+  "name": "Overlay Group",
+  "sections": {
+    "cart_drawer": {
+      "type": "g_cart-drawer",
+      "blocks": {
+        "products": {
+          "type": "products",
+          "settings": {
+            "show_remove_button": true
+          }
+        },
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "products",
+        "subtotal"
+      ],
+      "settings": {
+        "show_final_price_checkout_button": false,
+        "show_stock_alert": false,
+        "checkout_position": "bottom",
+        "show_cart_counter": false
+      }
+    },
+    "newsletter": {
+      "type": "g_newsletter-popup",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 10% off"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Be the first to know about new collections and exclusive offers."
+          }
+        },
+        "form": {
+          "type": "newsletter_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "form"
+      ],
+      "disabled": true,
+      "settings": {
+        "new_customers_only": false,
+        "color_scheme": "",
+        "display_delay_sec": 3,
+        "days_to_re_appear": 1,
+        "image_position": "left",
+        "image_overlay": 50
+      }
+    }
+  },
+  "order": [
+    "cart_drawer",
+    "newsletter"
+  ]
+}
